@@ -1,16 +1,3 @@
-/*
-====================================================
-  PROYECTO MÓDULO 4 - Fundamentos de programación en JavaScript
-  Aplicación de consola: Gestor de gastos personales
-====================================================
-  Este programa simula un pequeño gestor de gastos.
-  Integra: variables, condicionales, ciclos, funciones,
-  arreglos y objetos, según lo pedido en la consigna.
-*/
-
-// ---------------------------------------------------
-// Función auxiliar para mostrar mensajes también en el HTML
-// ---------------------------------------------------
 function mostrarEnPantalla(texto) {
   const salida = document.getElementById("salida");
   salida.textContent += texto + "\n";
@@ -18,9 +5,6 @@ function mostrarEnPantalla(texto) {
   console.log(texto);
 }
 
-// ---------------------------------------------------
-// LECCIÓN 2: Operaciones matemáticas básicas
-// ---------------------------------------------------
 function operacionesBasicas(a, b) {
   mostrarEnPantalla(`Suma: ${a} + ${b} = ${a + b}`);
   mostrarEnPantalla(`Resta: ${a} - ${b} = ${a - b}`);
@@ -28,9 +12,6 @@ function operacionesBasicas(a, b) {
   mostrarEnPantalla(`División: ${a} / ${b} = ${(a / b).toFixed(2)}`);
 }
 
-// ---------------------------------------------------
-// LECCIÓN 5: Objetos - cada gasto tiene propiedades y un método
-// ---------------------------------------------------
 function crearGasto(descripcion, monto, categoria) {
   return {
     descripcion: descripcion,
@@ -49,9 +30,6 @@ let gastos = [
   crearGasto("Curso online", 30000, "Educación"),
 ];
 
-// ---------------------------------------------------
-// LECCIÓN 4: Funciones - modularizamos el código
-// ---------------------------------------------------
 function calcularTotal(listaGastos) {
   let total = 0;
   for (let i = 0; i < listaGastos.length; i++) {
@@ -90,9 +68,6 @@ function clasificarGasto(monto) {
   }
 }
 
-// ---------------------------------------------------
-// LECCIÓN 3: Ciclos - while para menú interactivo
-// ---------------------------------------------------
 function iniciarMenu() {
   const nombreUsuario = prompt("¡Hola! ¿Cuál es tu nombre?");
 
@@ -119,7 +94,6 @@ function iniciarMenu() {
         "7. Salir",
     );
 
-    // Si el usuario cancela el prompt, opcion es null: cerramos el programa
     if (opcion === null) {
       mostrarEnPantalla("Programa cerrado por el usuario.");
       break;
@@ -215,7 +189,4 @@ function iniciarMenu() {
   }
 }
 
-// ---------------------------------------------------
-// Conectamos el botón del HTML con la función principal
-// ---------------------------------------------------
 document.getElementById("btnIniciar").addEventListener("click", iniciarMenu);

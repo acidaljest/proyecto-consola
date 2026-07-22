@@ -6,6 +6,13 @@ Aplicación de consola desarrollada en JavaScript como proyecto de cierre del
 Módulo 4: Fundamentos de programación en JavaScript. Permite al usuario
 registrar, visualizar, filtrar y clasificar sus gastos personales.
 
+## Estructura del proyecto
+
+/index.html
+/app.js
+/styles.css
+/README.md
+
 ## Cómo ejecutarlo
 
 1. Abrir el archivo `app.js` en un editor de código.
@@ -30,6 +37,10 @@ registrar, visualizar, filtrar y clasificar sus gastos personales.
 - **Funciones:** cada acción del programa está modularizada en su propia función.
 - **Arreglos y objetos:** los gastos se almacenan como un arreglo de objetos.
 - **Validaciones:** se valida que el monto ingresado sea un número válido y mayor a 0.
+
+## Objetivo académico
+
+Este proyecto fue desarrollado como evaluación del Módulo 4 del Bootcamp de Desarrollo Front-End, aplicando los fundamentos de JavaScript estudiados durante el curso.
 
 ## Autor
 
