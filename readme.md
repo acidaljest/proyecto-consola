@@ -3,7 +3,7 @@
 ## Descripción
 
 Aplicación de consola desarrollada en JavaScript como proyecto de cierre del
-Módulo 4: Fundamentos de programación en JavaScript. Permite al usuario
+Módulo 5: Fundamentos de programación en JavaScript. Permite al usuario
 registrar, visualizar, filtrar y clasificar sus gastos personales.
 
 ## Estructura del proyecto
